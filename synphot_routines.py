@@ -33,7 +33,7 @@ def normalize_model_spectrum(obs_spec, mod_spec, bin1, bin2):
 	norm_mod_spec = SourceSpectrum(Empirical1D,points=wl_range*u.angstrom,lookup_table=mod_binflux.flux*med_r_flux,keep_neg=True)
 	return norm_mod_spec
 
-def get_vega_synphot_table(filters,filter_file,filters_dir,vega,area,binrange1=1000,binrange2=50000,filter_plot=False):
+def get_vega_synphot_table(filters,filter_file,filters_dir,vega,area,binrange1=1000,binrange2=50000,filter_plot=False,save_fname=None):
 	d =[]#used later for Pandas table
 	vega_obsDict = {}
 	for i in range(len(filters)):
@@ -70,10 +70,16 @@ def get_vega_synphot_table(filters,filter_file,filters_dir,vega,area,binrange1=1
 	#Create Pandas table, out of the loop
 	obs_vega_Filter_table=pd.DataFrame(d,columns=('Filter','Counts_s-1','VegaMag','pivot_wl', 'effective_wl'))
 
-	obs_vega_Filter_table = obs_vega_Filter_table.sort_values(by="effective_wl",ascending=True).reset_index(drop=True)           
+	obs_vega_Filter_table = obs_vega_Filter_table.sort_values(by="effective_wl",ascending=True).reset_index(drop=True)
+
+	if save_fname is not None: obs_vega_Filter_table.to_csv(save_fname+".csv",index=False)
+
+
+
 	return obs_vega_Filter_table, vega_obsDict                           
 
-def get_synphot_table(filters,filter_file,filters_dir,sp_STD,area,vega,binrange1=1000,binrange2=50000,filter_plot=False):
+def get_synphot_table(filters,filter_file,filters_dir,sp_STD,area,vega,binrange1=1000,binrange2=50000,
+	filter_plot=False,save_fname=None):
 
 	obsDict = {}
 	d =[]#used later for Pandas table
@@ -142,6 +148,7 @@ def get_synphot_table(filters,filter_file,filters_dir,sp_STD,area,vega,binrange1
 
 	STD_table = STD_table.sort_values(by="effective_wl",ascending=True).reset_index(drop=True)
 
+	if save_fname is not None: STD_table.to_csv(save_fname+".csv",index=False)
 	return STD_table, obsDict #obs_STD_Filters, obs_vega_Filters
 
 def get_synphot_spectra_with_diff_flux_units(inspec):

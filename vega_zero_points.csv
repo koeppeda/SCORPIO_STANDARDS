@@ -1,0 +1,17 @@
+Filter,Counts_s-1,VegaMag,pivot_wl,effective_wl
+SCORPIO_g_no_adc,438471030701.8 ct,-0.055 mag(AB),4772.7 Angstrom,4804.65 Angstrom
+SCORPIO_g,371893012680.96 ct,-0.055 mag(AB),4777.22 Angstrom,4809.11 Angstrom
+SCORPIO_r_no_adc,296713259726.82 ct,0.113 mag(AB),5995.51 Angstrom,6016.03 Angstrom
+SCORPIO_r,254643165470.47 ct,0.113 mag(AB),5995.76 Angstrom,6016.26 Angstrom
+SCORPIO_i_no_adc,272095506644.56 ct,0.354 mag(AB),7364.17 Angstrom,7393.45 Angstrom
+SCORPIO_i,234176632269.55 ct,0.354 mag(AB),7365.34 Angstrom,7394.61 Angstrom
+SCORPIO_z,104000313130.2 ct,0.496 mag(AB),8559.84 Angstrom,8576.24 Angstrom
+SCORPIO_z_no_adc,120665453724.24 ct,0.496 mag(AB),8560.04 Angstrom,8576.44 Angstrom
+SCORPIO_Y,130768057412.98 ct,0.653 mag(AB),10379.77 Angstrom,10401.27 Angstrom
+SCORPIO_Y_no_adc,151842533875.09 ct,0.653 mag(AB),10379.9 Angstrom,10401.4 Angstrom
+SCORPIO_J,118866210027.25 ct,0.87 mag(AB),12025.14 Angstrom,12061.32 Angstrom
+SCORPIO_J_no_adc,138329797027.29 ct,0.871 mag(AB),12025.59 Angstrom,12061.8 Angstrom
+SCORPIO_H,64954251301.69 ct,1.343 mag(AB),15952.68 Angstrom,15982.57 Angstrom
+SCORPIO_H_no_adc,76220871006.03 ct,1.344 mag(AB),15956.42 Angstrom,15986.34 Angstrom
+SCORPIO_K,26263019470.43 ct,1.81 mag(AB),20943.82 Angstrom,20967.04 Angstrom
+SCORPIO_K_no_adc,32176838360.93 ct,1.812 mag(AB),20966.81 Angstrom,20990.13 Angstrom

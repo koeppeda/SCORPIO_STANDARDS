@@ -1,0 +1,11 @@
+Filter,Counts_s-1,VegaMag,pivot_wl,effective_wl
+SCORPIO_g_no_adc,481207.14 ct,14.899,5552.85 Angstrom,5554.95 Angstrom
+SCORPIO_g,411897.83 ct,14.889,5552.89 Angstrom,5554.99 Angstrom
+SCORPIO_r_no_adc,1342484.89 ct,13.361,6042.46 Angstrom,6059.16 Angstrom
+SCORPIO_r,1152289.84 ct,13.361,6042.63 Angstrom,6059.31 Angstrom
+SCORPIO_i_no_adc,1174577.54 ct,13.412,7329.47 Angstrom,7358.91 Angstrom
+SCORPIO_i,1010773.53 ct,13.412,7330.65 Angstrom,7360.09 Angstrom
+SCORPIO_z,397307.15 ct,13.545,8509.0 Angstrom,8524.1 Angstrom
+SCORPIO_z_no_adc,460956.69 ct,13.545,8509.2 Angstrom,8524.29 Angstrom
+SCORPIO_Y_no_adc,202094.07 ct,14.69,9759.71 Angstrom,9763.89 Angstrom
+SCORPIO_Y,174098.34 ct,14.689,9759.83 Angstrom,9764.02 Angstrom
